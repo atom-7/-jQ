@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: red;
+        }
+
+        .w {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <!-- <input class="wo" type="text"> -->
+    <input class="wo" type="button" value="我是按钮">
+    <div id="father">
+
+
+        <div id="div">
+            <h1>wo shi c</h1>
+            <h1>wo shi c</h1>
+            <h1 class="w">wo shi a</h1>
+            <h1>wo shi b </h1>
+            <h1>wo shi c</h1>
+        </div>
+    </div>
+    <script src="./jQuery.my.js"></script>
+    <script>
+        // // eq
+        // console.log('eq',$("h1").eq(2));
+
+        // //children
+        // console.log('children',$("#div").children());
+        // //指定
+        // console.log('指定',$("#div").children('.w'));
+
+        // //parent
+        // console.log('parent',$("#div").parent());
+
+        // //sibilings
+        // console.log('sibilings',$(".w").siblings());
+        // console.log('sibilings',$("#father").siblings());
+
+
+        // // on 
+        // console.log('on',$(".w").siblings().on('click', function () {
+        //     alert("我是兄弟")
+        // }));
+
+        // // css
+        
+       
+        $('h1').css({
+            fontSize: 10,
+            opacity: 0.5,
+            width: 100
+        })
+        // console.log('css',$(".w").css("backgroundColor"));
+        // $('.w').css('fontSize',50)
+    </script>
+
+</body>
+
+</html>
